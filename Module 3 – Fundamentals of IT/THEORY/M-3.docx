@@ -1,0 +1,821 @@
+1. What is a Program?
+
+- A Program is a set of instructions written in a programming language that tells the computer what to do.
+- Example: A calculator program adds, subtracts, multiplies, and divides numbers when we give input.
+
+
+2. What is Programming?
+
+- Programming is the process of writing instructions (code) that a computer can understand and execute.
+- It involves problem-solving, logic, and creativity to build software.
+
+Key Steps in Programming Process:
+
+- Understanding the problem
+- Planning the solution (flowchart/algorithm)
+- Writing the code
+- Testing and debugging
+- Running and maintaining the program
+
+
+3. Types of Programming Languages?
+
+- High-level languages (Python, Java, C#) → Easy to read, close to human language.
+- Low-level languages (Assembly, Machine code) → Closer to hardware, harder to write.
+
+
+4. World Wide Web & Internet Working
+
+- Client (browser) requests a page.
+- Server processes the request and sends back the page.
+- Data travels via TCP/IP using HTTP/HTTPS protocols.
+
+Client and Server:
+
+- Client = User’s computer or phone (sends request).
+- Server = Stores website/software (sends response).
+- Communication happens through requests and responses.
+
+
+LAB EXERCISE: Diagram: Data Transmission (Client ↔ Server)
+
+-    ┌─────────────┐           Request           ┌─────────────┐
+   │   Client    │ ─────────────────────────▶ │   Server    │
+   │ (Browser)   │                            │ (Website)   │
+   └─────────────┘                            └─────────────┘
+           ▲                                         │
+           │                                         │
+           └──────────────────────── Response ◀──────┘
+
+
+5. Network Layers on Client and Server
+
+Function of the TCP/IP Model and Its Layers:
+
+The TCP/IP model explains how data moves between client and server over the internet.
+It has 4 layers:
+
+Application Layer:
+
+- Provides services like HTTP, HTTPS, FTP, SMTP.
+- Client: Browser sends HTTP request.
+- Server: Web server sends back response (HTML, CSS, JS).
+
+Transport Layer:
+
+- Ensures reliable communication using TCP (or fast comms with UDP).
+- Client: Breaks message into smaller segments.
+- Server: Reassembles them in correct order.
+
+Internet Layer:
+
+- Handles addressing and routing using IP (Internet Protocol).
+- Client: Finds the server’s IP address (via DNS).
+- Server: Sends data packets to client’s IP address.
+
+Network Access Layer (Link Layer):
+
+- Deals with actual hardware and transmission.
+- Client: Sends packets through Wi-Fi/Ethernet.
+- Server: Receives packets via its network interface.
+
+
+6. Client and Server Communication
+
+What is a Client?
+- A client is a device or application that requests services or resources from another computer (server).
+- Examples:
+Web browsers (Chrome, Firefox)
+Mobile apps (Instagram, WhatsApp)
+
+What is a Server?
+- A server is a computer or program that provides services or resources to clients.
+- Examples:
+Web server (Apache, Nginx)
+Database server (MySQL, MongoDB)
+
+How Client-Server Communication Works
+
+Communication happens as a request-response cycle:
+
+Client sends a request:
+Example: You type www.example.com in a browser.
+The browser (client) sends an HTTP request to the server.
+
+Server processes the request:
+Checks what the client asked for (webpage, data, file).
+Retrieves or generates the response.
+
+Server sends a response back to the client:
+Example: Server sends the HTML, CSS, and images of the webpage.
+
+Client displays the response:
+The browser renders the webpage for you to see.
+
+
+7. Types of Internet Connections
+
+- How does Broadband differ from Fiber-Optic Internet?
+
+- Speed: Broadband is moderate (up to hundreds of Mbps), while Fiber-Optic is very high (up to Gbps).
+
+- Technology: Broadband uses copper cables, Fiber uses glass fiber cables with light signals.
+
+- Latency: Broadband has higher latency; Fiber has very low latency.
+
+- Reliability: Broadband is moderate and affected by distance/congestion; Fiber is very reliable and less affected by distance.
+Cost: Broadband is moderately priced; Fiber is more expensive but offers much faster speeds.
+
+
+LAB EXERCISE: Different Types of Internet Connections
+
+Dial-up: 
+
+Pros: Works on regular phone lines, cheap.
+Cons: Very slow (up to 56 Kbps), ties up phone line.
+
+DSL (Digital Subscriber Line):
+
+Pros: Uses phone line, always-on connection.
+Cons: Slower than fiber, distance from exchange affects speed.
+
+Broadband (Cable):
+
+Pros: Faster than DSL, reliable.
+Cons: Shared with neighbors (speed may vary), costs more.
+
+Fiber-Optic:
+
+Pros: Extremely fast, low latency, reliable.
+Cons: Expensive, limited availability in rural areas.
+
+Satellite:
+
+Pros: Available almost anywhere, good for remote areas.
+Cons: High latency, affected by weather, expensive.
+
+Mobile Data (3G/4G/5G):
+
+Pros: Portable, easy to setup.
+Cons: Limited data caps, network coverage issues.
+
+Fixed Wireless:
+
+Pros: Good for rural areas, no cables needed.
+Cons: Speed varies, line-of-sight issues.
+
+
+8. Protocols
+
+Differences Between HTTP and HTTPS:
+
+HTTP (HyperText Transfer Protocol):
+
+- Not encrypted.
+- Data can be intercepted by attackers.
+- Uses port 80.
+- Suitable for basic websites without sensitive information.
+
+HTTPS (HyperText Transfer Protocol Secure):
+
+- Encrypted using SSL/TLS.
+- Data is secure and cannot be easily intercepted.
+- Uses port 443.
+- Essential for websites handling sensitive data like banking, login, or e-commerce.
+
+LAB EXERCISE: Simulate HTTP and FTP Requests
+
+You can use command-line tools like curl to simulate requests:
+
+- HTTP Request Example:
+
+curl http://example.com
+
+Sends a simple GET request to a web server.
+Displays the HTML content returned by the server.
+
+- FTP Request Example:
+
+curl ftp://ftp.example.com --user username:password
+
+Connects to an FTP server.
+Can download or upload files depending on permissions.
+
+
+9. Application Security
+
+Role of Encryption in Securing Applications:
+
+Encryption converts data into a coded format that can only be read by authorized parties.
+Protects sensitive information such as passwords, payment details, and personal data from hackers.
+Ensures confidentiality, integrity, and sometimes authentication of data transmitted between clients and servers.
+Common encryption methods include AES (Advanced Encryption Standard) and RSA (asymmetric encryption).
+In web applications, encryption is used in HTTPS to secure communication between browsers and servers.
+
+Difference Between System Software and Application Software:
+
+System Software:
+
+Manages and controls the computer hardware and provides a platform for running application software.
+Examples: Operating systems (Windows, Linux), device drivers, utility programs.
+Runs in the background and is essential for the computer to function.
+
+Application Software:
+
+Designed for end-users to perform specific tasks or solve problems.
+Examples: MS Word, Excel, Chrome, WhatsApp.
+Requires system software to run and provides functionality directly to the user.
+
+
+10. Software Architecture
+
+Significance of Modularity in Software Architecture:
+
+Modularity is the design principle of dividing a software system into smaller, independent, and reusable components or modules.
+
+Each module focuses on a specific functionality and can be developed, tested, and maintained separately.
+
+Advantages of Modularity:
+
+Easier Maintenance: Bugs or updates in one module do not affect others.
+
+Reusability: Modules can be reused across different projects or systems.
+
+Scalability: New features can be added by creating new modules without redesigning the entire system.
+
+Improved Collaboration: Different teams can work on different modules simultaneously.
+Better Readability and Manageability: Breaking down complex systems into smaller parts makes it easier to understand.
+
+
+LAB EXERCISE: Design a basic three-tier software architecture diagram for a web application.
+
+[Presentation Layer]  -->  [Business Logic Layer]  -->  [Data Access Layer]
+       Client               Application Layer             Database
+
+
+11. Layers in Software Architecture
+
+Importance of Layers in Software Architecture:
+
+Separation of Concerns: Each layer handles a specific function, making the system easier to manage.
+Maintainability: Changes in one layer (e.g., database changes) do not affect other layers (e.g., UI).
+Scalability: Layers can be modified or upgraded independently to handle more users or data.
+Reusability: Business logic and data access layers can be reused in different applications.
+Improved Collaboration: Different teams can work on separate layers simultaneously.
+
+LAB EXERCISE: Case Study – Functionality of the Layers
+
+Presentation Layer (Client Layer)
+
+Handles user interaction.
+
+Examples in the system:
+
+Homepage displaying products
+
+Shopping cart interface
+
+Checkout forms
+
+Business Logic Layer (Application Layer)
+
+Processes requests from the presentation layer and applies rules.
+
+Examples in the system:
+Calculate total order price including discounts and taxes
+Validate payment information
+Apply inventory rules (check stock availability)
+Data Access Layer (Database Layer)
+Manages data storage and retrieval.
+
+Examples in the system:
+Store user account details
+Save order history and transactions
+Retrieve product information from the database
+
+
+12. Software Environments
+
+Importance of a Development Environment in Software Production
+
+Provides a Controlled Space: Developers can write and test code without affecting live systems.
+Facilitates Debugging: Errors can be detected and fixed before deployment.
+Supports Collaboration: Multiple developers can work in the same environment with consistent configurations.
+Speeds Up Development: Tools like IDEs, version control, and simulators improve efficiency.
+Ensures Consistency: Reduces differences between development, testing, and production environments, minimizing deployment issues.
+
+LAB EXERCISE: Explore Different Types of Software Environments
+
+Development Environment:
+Used by developers to write, test, and debug code.
+Includes IDEs, code editors, compilers, libraries, and debugging tools.
+Example: Visual Studio Code, Eclipse, PyCharm.
+
+Testing Environment:
+Simulates real-world conditions to test software for bugs, performance, and security.
+Can include staging servers or dedicated test machines.
+Example: QA team tests a web app before release.
+
+Production Environment:
+Live environment where the software is accessible to end-users.
+Needs to be stable, secure, and highly available.
+Example: A website like Amazon.com running for customers.
+
+
+13. Source Code
+
+Difference Between Source Code and Machine Code:
+
+Source Code:
+Written by programmers in high-level languages like Python, C++, or Java.
+Human-readable and understandable.
+Needs to be compiled or interpreted into machine code to run.
+
+Machine Code:
+Binary code (0s and 1s) that the computer’s CPU can directly execute.
+Not human-readable.
+Generated by compiling or interpreting the source code.
+
+LAB EXERCISE: Write and upload your first source code file to Github.
+github: https://github.com/VikasDharajiya/Tops-practice/blob/main/HTML/first.html
+
+
+14. Github and Introductions
+
+Importance of Version Control:
+
+Tracks Changes: Records every modification to the code over time.
+Collaboration: Multiple developers can work simultaneously without overwriting each other’s work.
+Backup & Recovery: Code is safely stored online and can be restored if lost.
+Revert Changes: You can go back to previous versions if bugs are introduced.
+Branching & Merging: Enables separate development of features before integrating them into the main project.
+
+LAB EXERCISE: Create a GitHub Repository and Commit & Push Code:
+
+Steps:
+
+Create a GitHub Account if you don’t already have one.
+Create a New Repository:
+Click New Repository on GitHub.
+Enter a repository name and optional description.
+Choose public or private.
+
+Initialize a Local Repository in your project folder:
+git init
+
+Add Your Code Files:
+git add <filename>
+
+Commit Changes:
+git commit -m "Initial commit"
+
+Link Local Repository to GitHub:
+git remote add origin <repository_url>
+
+Push Changes to GitHub:
+git push -u origin main
+
+
+15. Student Account in Github
+
+Benefits of Using GitHub for Students:
+
+Hands-on Learning: Practice real-world software development skills.
+Version Control Knowledge: Learn Git commands and workflow.
+Collaboration Skills: Work with classmates on shared projects.
+Portfolio Building: Showcase projects to potential employers or colleges.
+Access to Free Tools: GitHub Student Pack includes free development tools and cloud services.
+Open Source Contribution: Opportunity to contribute to open-source projects.
+
+LAB EXERCISE: Create a Student Account and Collaborate
+
+Steps:
+
+Sign Up for GitHub Education:
+Visit GitHub Education
+ and apply for a Student Pack using your school email.
+
+Create Your GitHub Account:
+
+Fill in your details (name, username, email, password).
+Create a Repository for a Small Project:
+Example: “Calculator-App” or “Portfolio-Website”.
+
+Invite a Classmate to Collaborate:
+
+Go to Settings → Manage Access → Invite Collaborator.
+
+Work on the Project Together:
+Use branches for features.
+Commit and push code changes.
+Merge contributions from each collaborator.
+
+Result: You have a working collaborative project hosted on GitHub.
+
+
+16. Application Software
+
+Role of Application Software in Businesses:
+
+Application software helps businesses perform specific tasks efficiently.
+Supports daily operations like accounting, inventory management, customer relations, and project management.
+Improves productivity by automating repetitive tasks and reducing manual effort.
+Enhances communication and collaboration between teams and departments.
+Provides data analysis and reporting tools for better decision-making.
+
+LAB EXERCISE: Report on Various Types of Application Software
+
+Types of Application Software and Productivity Benefits:
+
+Word Processing Software:
+Example: Microsoft Word, Google Docs
+Productivity: Enables creating, editing, and formatting documents quickly and efficiently.
+
+Spreadsheet Software:
+Example: Microsoft Excel, Google Sheets
+Productivity: Helps with data analysis, calculations, and financial planning.
+
+Presentation Software:
+Example: Microsoft PowerPoint, Google Slides
+Productivity: Simplifies creating visual presentations for meetings, reports, or lectures.
+
+Database Management Software:
+Example: MySQL, Microsoft Access
+Productivity: Organizes and retrieves large amounts of data efficiently.
+
+Communication Software:
+Example: Slack, Microsoft Teams, Zoom
+Productivity: Enhances team collaboration, messaging, and remote meetings.
+
+Graphics and Design Software:
+Example: Adobe Photoshop, Canva
+Productivity: Allows designing marketing materials, websites, and creative content quickly.
+
+
+17. Software Development Process
+
+Main Stages of the Software Development Process:
+
+Requirement Analysis: Identify user needs and system requirements.
+Planning: Define project objectives, resources, and schedules.
+Design: Plan system architecture, user interface, and database structure.
+Development (Implementation): Write and compile the source code.
+Testing: Detect and fix bugs; ensure software meets quality standards.
+Deployment: Install and make the software available for users.
+Maintenance: Update, enhance, and fix software after deployment.
+
+
+LAB EXERCISE: Create a Flowchart Representing the SDLC
+
+Flowchart (Text Representation):
+
+Requirement Analysis → Planning → Design → Development → Testing → Deployment → Maintenance → (Repeat)
+
+
+Explanation of Flow:
+
+Requirement Analysis: Gather and document what the software should do.
+
+Planning: Define project scope, resources, and timelines.
+Design: Create system architecture and design specifications.
+Development: Write code and implement functionalities.
+Testing: Verify the software works correctly and is free of bugs.
+Deployment: Release the software to users or production environment.
+Maintenance: Update and fix the software as needed.
+Repeat: Iterate improvements based on feedback and new requirements.
+
+
+18. Software Requirement
+
+Importance of Requirement Analysis Phase:
+
+Clarifies Needs: Ensures developers understand exactly what the user wants.
+Reduces Errors: Early identification of incorrect or missing requirements prevents costly mistakes later.
+Improves Planning: Helps in estimating time, resources, and costs accurately.
+Enhances Communication: Provides a clear agreement between stakeholders and developers.
+Forms a Basis for Design: Requirement specifications guide system design and development.
+
+
+LAB EXERCISE: Requirement Specification for a Simple Library Management System
+
+Functional Requirements:
+
+Add, update, or delete books in the library.
+Register and manage student/member accounts.
+Issue books to members and record return dates.
+Search books by title, author, or category.
+Generate reports of issued and available books.
+
+Non-Functional Requirements:
+
+User-friendly interface for staff and students.
+Secure login for library staff.
+Fast search and retrieval of book information.
+Reliable data storage to prevent data loss.
+
+
+19. Software Analysis
+
+Role of Software Analysis in Development:
+
+Identifies Requirements: Determines exactly what the system should accomplish.
+Reduces Risk: Detects inconsistencies, missing requirements, or potential issues early.
+Improves Design and Development: Provides a clear roadmap for architects and developers.
+Enhances Communication: Serves as a reference between stakeholders and developers.
+Ensures Quality: Helps produce software that meets user expectations and requirements.
+
+LAB EXERCISE: Functional Analysis for an Online Shopping System
+
+Functional Requirements:
+
+User registration and login.
+Browse products by categories, search products.
+Add products to shopping cart and manage cart items.
+Place orders and select payment methods (credit card, digital wallet, COD).
+Track order status and delivery.
+Generate invoices and order history for users.
+Admin panel for managing products, categories, and orders.
+
+Non-Functional Requirements:
+
+Fast page loading and smooth navigation.
+Secure payment processing and user data protection.
+Scalability to handle large numbers of users and orders.
+Reliable and consistent availability.
+
+
+20. System Design
+
+Key Elements of System Design:
+
+Modularity: Dividing the system into independent modules for easier development and maintenance.
+Scalability: Designing the system to handle increasing users and transactions efficiently.
+Performance: Ensuring the system responds quickly and efficiently under load.
+Security: Protecting user data and preventing unauthorized access.
+Reliability: Ensuring the system works consistently without failures.
+Maintainability: Designing for easy updates, bug fixes, and feature enhancements.
+Usability: Ensuring the system is user-friendly and intuitive for end-users.
+
+
+LAB EXERCISE: Basic System Architecture for a Food Delivery App
+
+Components of the System:
+
+Presentation Layer (Client Side):
+
+Mobile app or web interface for users.
+Displays restaurants, menus, order status, and allows placing orders.
+
+Business Logic Layer (Application Layer):
+
+Handles order processing, payment validation, and delivery assignment.
+Calculates estimated delivery times and updates order status.
+
+Data Access Layer (Database Layer):
+
+Stores user data, restaurant details, menu items, and order history.
+Manages queries for searching restaurants, tracking orders, and storing transactions.
+
+Text-Based Architecture Diagram:
+
+[Presentation Layer] --> [Business Logic Layer] --> [Data Access Layer]
+     Mobile/Web App         Application Server         Database
+
+
+21. Software Testing
+
+Importance of Software Testing:
+
+Detects Bugs Early: Identifies errors before deployment.
+Ensures Quality: Confirms that the software meets requirements and functions correctly.
+Improves Reliability: Ensures the system behaves as expected under different conditions.
+Reduces Maintenance Costs: Early detection of defects reduces the cost of fixing issues later.
+Enhances User Satisfaction: Provides confidence that the software is stable and reliable.
+
+LAB EXERCISE: Test Cases for a Simple Calculator Program
+
+Program Functions: Addition, Subtraction, Multiplication, Division
+
+| Test Case        | Input  | Expected Output | Result    |
+| ---------------- | ------ | --------------- | --------- |
+| Addition         | 5 + 3  | 8               | Pass/Fail |
+| Subtraction      | 10 - 4 | 6               | Pass/Fail |
+| Multiplication   | 6 × 7  | 42              | Pass/Fail |
+| Division         | 20 ÷ 4 | 5               | Pass/Fail |
+| Division by Zero | 10 ÷ 0 | Error/Exception | Pass/Fail |
+
+Explanation:
+
+Each test case checks a different functionality of the calculator.
+Ensures the program works as expected for both valid and invalid inputs.
+
+
+22. Maintenance
+
+Types of Software Maintenance:
+
+Corrective Maintenance:
+Fixing bugs or defects found after deployment.
+
+Adaptive Maintenance:
+Updating software to work with new hardware, OS, or software environments.
+
+Perfective Maintenance:
+Enhancing performance, adding new features, or improving usability.
+
+Preventive Maintenance:
+Making changes to prevent future problems or system failures.
+
+LAB EXERCISE: Real-World Case of Critical Software Maintenance
+
+Case Study: Airline Reservation System
+Scenario: A major airline’s reservation system experienced a database failure during peak booking hours.
+
+Maintenance Actions Taken:
+
+Emergency bug fix applied to the database system.
+Server load balancing implemented to prevent crashes.
+Data recovery from backups ensured no booking information was lost.
+System monitored continuously after the fix to prevent future failures.
+Outcome: The system returned to normal operations quickly, minimizing disruption to customers and revenue loss.
+
+
+23. development
+
+Key Differences Between Web and Desktop Applications:
+
+| Feature                 | Web Applications                                                         | Desktop Applications                                                 |
+| ----------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| **Access**              | Run in a web browser; accessible from any device with internet.          | Installed locally on a specific computer; limited to that machine.   |
+| **Installation**        | No installation required; updates are automatic.                         | Must be installed and updated manually on each device.               |
+| **Platform Dependency** | Platform-independent (works on Windows, Mac, Linux).                     | Platform-dependent; may require different versions for different OS. |
+| **Maintenance**         | Easier to maintain and update since changes are server-side.             | Updates must be applied individually on each system.                 |
+| **Performance**         | Generally slower; depends on network speed.                              | Faster; uses local resources for better performance.                 |
+| **Connectivity**        | Requires internet for full functionality (except some offline features). | Can work offline without internet connection.                        |
+
+
+24. Web Application
+
+Advantages of Using Web Applications Over Desktop Applications:
+
+Platform Independence:
+Can run on any device with a web browser, regardless of operating system.
+
+No Installation Required:
+Users can access the application directly through a browser without installing software.
+
+Easy Maintenance and Updates:
+Updates are applied on the server side; users automatically get the latest version.
+
+Accessibility:
+Accessible from anywhere with an internet connection, supporting remote work and collaboration.
+
+Cost-Effective:
+Reduces deployment and support costs compared to installing software on multiple machines.
+
+Scalability:
+Can easily scale to handle more users or data without requiring client-side changes.
+
+
+25. Designing
+
+Role of UI/UX Design in Application Development:
+
+User Interface (UI) Design:
+Focuses on the look and feel of the application.
+Involves layout, colors, typography, buttons, and overall visual aesthetics.
+Ensures that users can interact with the application intuitively.
+
+User Experience (UX) Design:
+Focuses on the overall experience of using the application.
+Ensures that tasks are easy to complete, workflows are logical, and the application is efficient.
+Includes usability testing, navigation design, and feedback mechanisms.
+
+Importance in Application Development:
+Improves user satisfaction and engagement.
+Reduces user errors and learning curve.
+Enhances productivity by making tasks easier and faster.
+Increases adoption rate and loyalty among users.
+
+
+26. Mobile Application
+
+Differences Between Native and Hybrid Mobile Apps:
+
+Native Mobile Apps:
+
+Developed specifically for a single platform (iOS or Android) using platform-specific languages (Swift, Kotlin, Java).
+High performance and optimized for the platform.
+Full access to device hardware and APIs (camera, GPS, sensors).
+Provides smoother, platform-specific UI/UX.
+Updates require deployment to the specific platform.
+
+Hybrid Mobile Apps:
+
+Developed using web technologies (HTML, CSS, JavaScript) and run inside a native container.
+Slightly lower performance compared to native apps.
+Limited access to device features; some may require plugins.
+Single codebase works on multiple platforms, reducing development cost and time.
+Updates can often be applied faster, sometimes remotely.
+
+
+27. DFD (Data Flow Diagram)
+
+Significance of DFDs in System Analysis:
+
+Visual Representation: Simplifies understanding complex systems.
+Identify Data Flow: Shows how data moves between processes and databases.
+Requirement Validation: Ensures all user and system requirements are captured.
+Facilitates Design: Serves as a blueprint for system design and implementation.
+Improves Communication: Helps stakeholders and developers understand the system.
+
+LAB EXERCISE: Create a DFD for a Hospital Management System
+
+Components of DFD:
+
+External Entities:
+Patients, Doctors, and Admins who interact with the system.
+
+Processes:
+Patient Registration, Appointment Scheduling, Billing, Medical Records Management.
+
+Data Stores:
+Databases storing patient records, appointments, and billing information.
+
+Data Flows:
+Flow of information between external entities, processes, and data stores.
+
+Example Text-Based DFD:
+
+[Patient] --> (Registration) --> [Patient Records Database]
+[Doctor] --> (Appointment Scheduling) --> [Appointments Database]
+[Admin] --> (Billing) --> [Billing Database]
+
+
+Explanation:
+
+Shows how data moves through the system.
+Helps in understanding system requirements and designing workflows.
+
+
+28. Desktop Application
+
+Pros and Cons of Desktop Applications Compared to Web Applications
+
+Pros:
+
+High Performance: Runs locally using system resources.
+Offline Access: Can work without an internet connection.
+Better Device Integration: Full access to hardware features (CPU, GPU, peripherals).
+Security: Data can be stored locally, reducing exposure to online threats.
+
+Cons:
+
+Platform Dependency: Must be installed separately on each OS; may require multiple versions.
+Maintenance: Updates must be installed individually on each device.
+Limited Accessibility: Cannot access from multiple devices remotely without additional setup.
+Distribution: More complex to distribute and install compared to web apps.
+
+
+29. Flow Chart
+
+How Flowcharts Help in Programming and System Design:
+
+Visual Representation: Makes it easier to understand the program logic before coding.
+Simplifies Complex Logic: Breaks down processes into clear steps.
+Error Detection: Helps identify logical errors in the design phase.
+Improves Communication: Acts as a common reference for developers, designers, and stakeholders.
+Planning Tool: Guides the coding process and aids in documentation.
+
+
+LAB EXERCISE: Flowchart for an Online Registration System
+
+Steps in the Flowchart (Text-Based Representation):
+
+- Start
+- Input User Details (Name, Email, Password)
+- Validate Details
+If invalid → Show error message → Go back to Input
+If valid → Proceed
+- Check Email Uniqueness
+If email exists → Show error → Go back to Input
+If email is unique → Proceed
+- Save Details to Database
+- Confirmation Message (Registration Successful)
+- End
+
+Text-Based Flowchart Example:
+
+[Start] 
+   ↓
+[Input User Details] 
+   ↓
+[Validate Details?] --No--> [Show Error] --> [Input User Details]
+   ↓ Yes
+[Check Email Uniqueness?] --No--> [Show Error] --> [Input User Details]
+   ↓ Yes
+[Save Details to Database]
+   ↓
+[Registration Successful]
+   ↓
+[End]
