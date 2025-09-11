@@ -1,0 +1,36 @@
+• What is a HTTP?
+• What is a Browsers? How they works?
+• What is Domain Name?
+• What is hosting?
+
+1. What is a HTTP?
+
+- HTTP stand for HyperText Transfer Protocol.
+- It is the communication protocol used by web browsers and servers to transfer data over the internet.
+- Example: When you type a website link like http://example.com, HTTP tells your browser how to fetch the page from the server.
+
+
+2. What is a Browsers? How they works?
+
+- A Browser is software (like Chrome, Firefox, Edge, Safari) used to access and view websites.
+
+How it works:
+
+(a) You type a website address (URL).
+(b) The browser sends a request (using HTTP/HTTPS) to the web server.
+(c) he server sends back the website files (HTML, CSS, JavaScript, images, etc.).
+(d) The browser interprets these files and displays the page to you.
+
+
+3. What is a Domain Name?
+
+- A Domain Name is the human-friendly name of a website.
+- Example: google.com is easier to remember than its IP address 142.250.190.14.
+- It works like an address for your website so users can find it easily.
+
+
+4. What is Hosting?
+
+- Hosting is a service that stores your website’s files (HTML, CSS, images, etc.) on a server so people can access it online.
+- When someone enters your domain name, hosting servers deliver the website content to their browser.
+- Example: Companies like Hostinger, GoDaddy, or AWS provide hosting services.

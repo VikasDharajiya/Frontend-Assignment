@@ -1,0 +1,46 @@
+LAB EXERCISE: Explain phases of SDLC life cycle.
+
+
+phases of SDLC life cycle:
+Requirement → Planning → Design → Development → Testing → Deployment → Maintenance → (Repeat)
+
+🔹 Software Development Life Cycle (SDLC)
+
+The SDLC is not just a straight line — it’s a cycle because after the last step (Maintenance), the process often goes back to the first step (Requirement). That’s why it’s called a life cycle.
+
+🌀 Steps in the Cycle:
+
+Requirement:
+
+Collect information from clients or stakeholders.
+Example: A client wants an e-commerce website.
+
+Planning:
+
+Estimate cost, time, resources, and risks.
+Example: Decide which tech stack (React, Node.js, Database) and team members are needed.
+
+Design:
+
+Create system design and user interface.
+Example: Make wireframes, database schema, and architecture.
+
+Development:
+
+Write the actual code.
+Example: Developers build the front-end (UI) and back-end (server logic).
+
+Testing:
+
+Check for bugs, performance, and security.
+Example: Test checkout process, login system, and speed of the site.
+
+Deployment:
+
+Release the software to users.
+Example: Upload the website to a hosting server (like AWS or Hostinger).
+
+Maintenance:
+
+Fix errors, add new features, keep the system updated.
+Example: Update payment gateway, fix security bugs.

@@ -1,0 +1,57 @@
+• Difference between Web Designer and Web Developer
+• What is a W3C?
+• What is Domain?
+• What SEO?
+• What is SDLC life cycle?
+
+1. Difference between Web Designer and Web Developer
+
+Web Designer:
+- Focuses on the look and feel of a website.
+- Works with colors, layouts, images, typography, and user experience (UI/UX).
+- Uses tools like Figma, Photoshop, Canva, or CSS.
+
+Web Developer:
+- Focuses on building and coding the website.
+- Writes code (HTML, CSS, JavaScript, PHP, etc.) to make the site functional.
+- Works on front-end (client side), back-end (server side), or full-stack.
+
+In short: Designer makes it beautiful, Developer makes it work.
+
+
+2. What is W3C?
+
+- W3C stands for World Wide Web Consortium.
+- It is the main international organization that develops standards for the web.
+- Example: W3C sets the rules for HTML, CSS, XML so all browsers work the same way.
+
+
+3. What is Domain?
+
+- A Domain is the unique name/address of a website on the internet.
+- Example: www.google.com is a domain.
+- It points to the server where your website is hosted.
+
+
+4. What is SEO?
+
+- SEO stands for Search Engine Optimization.
+- It is the process of improving a website so it appears higher in search engines (Google, Bing, etc.).
+- Includes using keywords, fast loading speed, mobile-friendly design, and backlinks.
+- Goal: Get more traffic from search engines.
+
+
+5. What is SDLC Life Cycle?
+
+- SDLC = Software Development Life Cycle.
+- It is the step-by-step process used to create software.
+
+Phases of SDLC:
+Requirement Analysis – Understand what the client wants.
+Planning – Create project plan, cost, and timeline.
+Design – Design system architecture and UI.
+Development – Write the actual code.
+Testing – Check for bugs and errors.
+Deployment – Launch the software.
+Maintenance – Update and fix issues after launch.
+
