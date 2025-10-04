@@ -1,0 +1,103 @@
+• Question 1: Define HTML. What is the purpose of HTML in web development?
+
+- HTML (HyperText Markup Language) is the standard language used to create and structure   web pages. It defines the content and layout of a webpage using elements called tags (like <p>, <h1>, <img>, etc.).
+
+- Purpose of HTML in Web Development:
+
+- Structure: It provides the basic structure of a webpage — headings, paragraphs, images, links, tables, forms, etc.
+- Content Presentation: It organizes text, images, and other media for display in web browsers.
+- Linking Documents: It allows linking between different web pages using hyperlinks (<a> tag).
+- Foundation for Other Technologies: It works with CSS (for styling) and JavaScript (for interactivity) to build complete, dynamic websites.
+
+
+
+• Question 2: Explain the basic structure of an HTML document. Identify the mandatory tags and their purposes
+
+- Every HTML document follows a specific structure that helps the browser understand how to display the content.
+
+- Here’s the basic structure:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a sample paragraph.</p>
+  </body>
+</html>
+
+- <!DOCTYPE html>	: Declares the document type and version of HTML. It tells the browser that the page is written in HTML5.
+- <html> : The root element of an HTML document. All other elements are placed inside it.
+- <head> : Contains metadata (information about the document) such as the title, character encoding, styles, and links to scripts or CSS files. This content is not shown on the page.
+- <title> : Defines the title of the web page, which appears on the browser tab.
+- <body> : Contains all the visible content of the webpage, such as text, images, videos, links, etc.
+
+
+
+• Question 3: What is the difference between block-level elements and inline elements in
+HTML? Provide examples of each.
+
+- Block-level elements start on a new line and take up the full width available (stretching from left to right).They are used to create large structural sections of a webpage.
+
+Features:
+- Always start on a new line.
+- Occupy the full width of their parent container.
+- Can contain other block-level or inline elements.
+
+- ex:
+<div>Division Block</div>
+<p>Paragraph Block</p>
+<h1>Heading</h1>
+<ul>
+  <li>List Item</li>
+</ul>
+- Common Block Elements:
+<div>, <p>, <h1>–<h6>, <ul>, <ol>, <li>, <table>, <section>, <article>
+
+- Inline elements do not start on a new line and only take up as much width as necessary.
+They are used to style or format small portions of text inside a block-level element.
+
+Features:
+- Do not break the line.
+- Occupy only the space required by their content.
+- Usually used inside block-level elements.
+
+- ex:
+<span>Inline text</span>
+<a href="#">Link</a>
+<strong>Bold text</strong>
+<img src="image.jpg" alt="Example">
+- Common Inline Elements:
+<span>, <a>, <strong>, <em>, <img>, <b>, <i>, <u>
+
+
+
+• Question 4: Discuss the role of semantic HTML. Why is it important for accessibility andSEO? Provide examples of semantic elements.
+
+- Semantic HTML means using HTML elements that clearly describe their meaning and purpose in the webpage — both for humans and browsers.
+- Instead of using generic tags like <div> or <span>, semantic HTML uses tags that tell what kind of content they contain.
+
+- Role of Semantic HTML
+
+Semantic HTML helps:
+
+- Organize content meaningfully — making the webpage structure clear and easy to understand.
+- Improve accessibility — screen readers and assistive technologies can better interpret and navigate the content.
+- Enhance SEO (Search Engine Optimization) — search engines can understand the page structure and rank it more effectively.
+
+Importance for Accessibility:
+
+- Screen readers can identify sections like headers, navigation, main content, and footers.
+- Helps visually impaired users navigate the page easily.
+Example:
+<nav>Navigation Links</nav>
+<main>Main Content Here</main>
+<footer>Page Footer</footer>
+
+Importance for SEO:
+
+- Search engines like Google use semantic tags to understand what each section of your webpage means.
+- For example, <article> tells Google that the content is an independent article, and <header> marks the top section.
+- This improves your page’s ranking and visibility in search results.

@@ -1,0 +1,82 @@
+<!-- Task:
+Create a product catalog table that includes the following columns:
+ Product Name
+ Product Image (use placeholder image URLs)
+ Price
+ Description
+ Availability (in stock, out of stock)
+Additional Requirements:
+ Use thead for the table header.
+ Add a border and some basic styling using inline CSS.
+ Use colspan or rowspan to merge cells where applicable -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <table
+      border="1"
+      style="
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      "
+    >
+      <thead style="background-color: #f2f2f2">
+        <tr>
+          <th>Product Name</th>
+          <th>Product Image</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Smartphone X</td>
+          <td><img height="100px" src="m1.png" alt="Smartphone Front" /></td>
+          <td>799</td>
+          <td>Front view of the phone</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td><img height="100px" src="m2.jpg" alt="Smartphone Back" /></td>
+          <td>799</td>
+          <td>Back view of the phone</td>
+          <td>In Stock</td>
+        </tr>
+
+        <tr>
+          <td>Laptop Pro</td>
+          <td colspan="2">
+            <img height="100px" src="laptop.jpg" alt="Laptop" />
+          </td>
+          <td>High performance laptop for professionals</td>
+          <td>Out of Stock</td>
+        </tr>
+
+        <tr>
+          <td>Wireless Headphones</td>
+          <td><img height="100px" src="headphone.jpg" alt="Headphones" /></td>
+          <td>199</td>
+          <td>Noise-cancelling over-ear headphones</td>
+          <td>In Stock</td>
+        </tr>
+
+        <tr>
+          <td>Smartwatch Series 5</td>
+          <td><img src="watch.jpg" height="100px" alt="Smartwatch" /></td>
+          <td>299</td>
+          <td>Track your fitness and notifications</td>
+          <td>In Stock</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+Question 1: Structure of an HTML Table and Purpose of Elements
+
+- An HTML table is used to display data in a structured, grid-like format (rows and columns). The basic elements of a table include:
+
+1. <table>:
+- This is the container element that defines the start and end of a table.
+2. <tr> (Table Row):
+- Represents a row in the table. Every row contains cells (<th> or <td>).
+3. <th> (Table Header):
+- Represents a header cell, usually bold and centered by default.
+- Used to describe the content of a column or row.
+4. <td> (Table Data):
+- Represents a data cell, containing the actual content of the table.
+5. <thead> (Table Head):
+- Groups header rows together. Usually used to separate the header from the body (<tbody>) and can help with styling or scrolling.
+
+
+
+Question 2: Difference Between colspan and rowspan
+
+- colspan: Merges multiple columns into a single cell.
+
+Example:
+<tr>
+  <td colspan="2">This cell spans 2 columns</td>
+</tr>
+
+- rowspan: Merges multiple rows into a single cell.
+
+Example:
+<tr>
+  <td rowspan="2">This cell spans 2 rows</td>
+  <td>Row 1</td>
+</tr>
+<tr>
+  <td>Row 2</td>
+</tr>
+
+colspan → horizontal merging
+rowspan → vertical merging
+
+
+
+Question 3: Why Tables Should Be Used Sparingly for Layout
+
+- Using tables for layout is not recommended because:
+
+- Tables are meant for tabular data, not page design.
+- Using tables for layout makes the HTML less semantic and harder to maintain.
+- It can negatively affect accessibility (screen readers) and SEO.
+- Tables can make responsive design difficult.
