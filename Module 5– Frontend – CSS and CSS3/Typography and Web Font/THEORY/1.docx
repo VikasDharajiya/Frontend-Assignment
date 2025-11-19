@@ -1,0 +1,57 @@
+• Question 1: Explain the difference between web-safe fonts and custom web fonts. Whymight
+you use a web-safe font over a custom font?
+
+- Web-safe fonts:
+
+- These are fonts that are already installed on most operating systems (Windows, Mac, Linux).
+- They do not need to be downloaded.
+- Examples: Arial, Times New Roman, Verdana, Georgia, Courier New.
+
+- Custom web fonts:
+
+- These are fonts that are not preinstalled on all devices.
+- They must be downloaded from the web when the webpage loads.
+- Examples: Google Fonts, Adobe Fonts, custom .ttf/.woff files.
+
+- You might choose a web-safe font because:
+
+- Faster loading — no need to download anything.
+- Better performance on slow connections.
+- More reliable — will look almost the same on every device.
+- No external server dependency — website works even if Google Fonts or external links fail.
+
+
+
+• Question 2: What is the font-family property in CSS? How do you apply a custom GoogleFont
+to a webpage?
+
+- It is a CSS property used to set the font for text in HTML elements.
+
+- It can contain:
+
+A specific font → "Poppins"
+A fallback font → Arial
+A generic type → sans-serif
+
+ex: 
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+- How to apply a Google Font to a webpage:
+
+Step 1: Get the Google Font link:
+
+- Go to fonts.google.com, choose a font, and Google provides a <link> tag.
+
+Example (Poppins):
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+- Put this inside the <head> of your HTML.
+
+- Step 2: Use the font with font-family
+
+body {
+  font-family: "Poppins", sans-serif;
+}

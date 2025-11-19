@@ -1,0 +1,66 @@
+• Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms flex-container and flex-item.
+
+- CSS Flexbox (Flexible Box Layout) is a one-dimensional layout system used to arrange items horizontally or vertically in a flexible and efficient way.
+
+It helps in:
+- Aligning items properly
+- Creating responsive layouts
+- Managing spacing automatically
+- Handling different screen sizes easily
+
+- Flex-Container:
+- The parent element where display: flex; is applied.
+It controls how the child items behave.
+
+Example:
+.parent {
+  display: flex;
+}
+
+- Flex-Item:
+- The children elements inside a flex-container.
+They take the flex properties and align based on the container rules.
+
+Example:
+<div class="parent">
+  <div class="child">Item 1</div>
+  <div class="child">Item 2</div>
+</div>
+
+
+
+
+• Question 2: Describe the properties justify-content, align-items, and flexdirection used in Flexbox.
+
+- 1. justify-content:
+
+- Controls horizontal alignment of flex items (in row direction).
+
+Values:
+flex-start → items at left
+center → items in center
+flex-end → items at right
+space-between → equal gaps between items
+space-around → equal space around items
+space-evenly → equal space everywhere
+
+- 2. align-items:
+
+- Controls vertical alignment of flex items (in row direction).
+
+Values:
+flex-start → aligned to top
+center → aligned center vertically
+flex-end → aligned bottom
+stretch → items stretch to fill height
+baseline → aligned to text baseline
+
+- 3. flex-direction:
+
+- Controls the direction in which items are placed.
+
+Values:
+row → left to right (default)
+row-reverse → right to left
+column → top to bottom
+column-reverse → bottom to top

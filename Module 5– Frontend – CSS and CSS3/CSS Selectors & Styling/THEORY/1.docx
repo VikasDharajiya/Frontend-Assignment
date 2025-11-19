@@ -1,0 +1,131 @@
+• Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors.
+
+- A CSS selector is a pattern used to select HTML elements that you want to style.
+
+1. Element Selector:
+
+- Targets HTML elements by their tag name.
+- It styles all elements of that type.
+Example:
+p {
+  color: blue;
+}
+- This will make all <p> elements’ text blue.
+
+2. Class Selector:
+
+- Starts with a dot (.).
+- Used to style one or more elements that share the same class attribute.
+
+Example:
+<p class="highlight">This is highlighted text.</p>
+<style>
+.highlight {
+  background-color: yellow;
+  color: black;
+}
+</style>
+
+3. ID Selector:
+
+- Starts with a hash symbol (#).
+- Used to style a specific, unique element (each ID should be used only once per page).
+
+Example:
+<p id="main">This is the main paragraph.</p>
+<style>
+#main {
+  font-size: 20px;
+  color: red;
+}
+</style>
+
+
+
+• Question 2: Explain the concept of CSS specificity. How do conflicts between multiple stylesget resolved?
+
+- CSS specificity is a set of rules that the browser uses to decide which CSS style to apply when multiple selectors target the same element.
+
+Priority (Highest → Lowest)	         Example
+1 Inline styles	                  <p style="color:red;">
+2 ID selectors	                  #intro {}
+3 Class, attribute, pseudo-class	.highlight {}
+4 Element selectors	              p {}
+5 Universal/inherited styles	    * {}
+
+
+
+• Question 3: What is the difference between internal, external, and inline CSS? Discuss the advantages and disadvantages of each approach.
+
+- CSS can be added to a webpage in three main ways — inline, internal, and external.
+Each has its own use cases, benefits, and drawbacks.
+
+1. Inline CSS:
+
+- CSS is written inside an HTML tag using the style attribute.
+Example:
+<p style="color: blue; font-size: 18px;">This is inline CSS.</p>
+
+Advantages:
+- Quick and easy for small changes or testing.
+- Styles apply immediately to that element only.
+- No need for an external file.
+
+Disadvantages:
+- Not reusable (you must repeat styles on every element).
+- Makes HTML code messy and hard to maintain.
+- Has highest specificity, so can override other styles unintentionally.
+- Slower for large projects (lots of repeated code).
+
+2. Internal CSS:
+
+- CSS is written inside a <style> tag within the <head> section of an HTML file.
+
+Example:
+<head>
+  <style>
+    p {
+      color: green;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <p>This is internal CSS.</p>
+</body>
+
+Advantages:
+- Keeps styles in one place within the same HTML file.
+- Easier to maintain than inline CSS.
+- Good for small projects or single-page designs.
+
+Disadvantages:
+- CSS applies only to that page.
+- For multiple pages, you must copy styles into each file.
+- Increases page size and load time if used repeatedly.
+
+
+
+3. External CSS:
+
+- CSS is written in a separate .css file, linked to the HTML using the <link> tag.
+
+Example:
+ HTML file:
+<link rel="stylesheet" href="style.css">
+
+style.css file: 
+p {
+  color: red;
+  font-size: 18px;
+}
+
+Advantages:
+- Best for large websites — one CSS file can style many pages.
+- Makes code clean and organized.
+- Browser caches CSS, improving load time after the first visit.
+- Easy to maintain and update.
+
+Disadvantages:
+- Requires an extra HTTP request (may slightly delay initial load).
+- If the CSS file fails to load, the page loses all styling.

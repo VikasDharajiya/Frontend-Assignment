@@ -1,0 +1,39 @@
+• Question 1: What are media queries in CSS, and why are they important for responsive design?
+
+- Media queries are CSS rules that apply styles only when certain conditions are true, such as screen width, height, device type, orientation, etc.
+
+Example conditions:
+Screen width < 600px
+Screen width > 1024px
+Screen is in landscape mode
+Device is a phone or tablet
+
+- Media queries help you make your website responsive, meaning the layout adjusts to:
+
+Mobile screens
+Tablets
+Laptops
+Large desktops
+
+- Without media queries, your website would look the same on every device, causing:
+
+Text too large or small
+Layout breaking
+Images overflowing
+Poor user experience
+
+
+
+• Question 2: Write a basic media query that adjusts the font size of a webpage for screens smaller than 600px
+
+(default font-size)
+body {
+  font-size: 18px;
+}
+
+(small than 600px)
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" method="get">
+      <label for="fullname">Full Name:</label>
+      <input
+        class="b1"
+        type="text"
+        id="fullname"
+        name="fullname"
+        required
+        minlength="3"
+        maxlength="50"
+        placeholder="Enter your full name"
+      />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        class="b1"
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Enter your email"
+      />
+      <br /><br />
+
+      <label for="phone">Mobile Number:</label>
+      <input
+        class="b1"
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+        pattern="[0-9]{10}"
+        placeholder="Enter 10-digit number"
+      />
+      <br /><br />
+
+      <label for="subject">Select Subject:</label>
+      <select class="b1" id="subject" name="subject" required>
+        <option value="">--Select subject--</option>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="database">Database</option>
+      </select>
+      <br /><br />
+
+      <label for="message">Message:</label>
+      <textarea
+        class="b1"
+        id="message"
+        name="message"
+        required
+        minlength="10"
+        maxlength="500"
+        placeholder="Write your message here"
+      ></textarea>
+      <br /><br />
+
+      <button type="submit"><span></span>Submit</button>
+    </form>
+  </body>
+</html>
