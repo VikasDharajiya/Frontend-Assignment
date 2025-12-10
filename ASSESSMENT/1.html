@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Interval Calculator</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <style>
+      body {
+        margin-top: 50px;
+        background: #f7f7f7;
+      }
+      .box {
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 12px rgba(76, 130, 210, 0.493);
+      }
+      .result-box {
+        margin-top: 20px;
+        padding: 18px;
+        border-radius: 8px;
+        background: #f9f7f7;
+        border: 1px solid #e8e8e8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2 class="text-center">Date Interval Calculator</h2>
+        <hr />
+
+        <div class="row">
+          <div class="col-md-4">
+            <label><b>Start Date</b></label>
+            <input type="date" class="form-control" />
+          </div>
+
+          <div class="col-md-4">
+            <label><b>End Date</b></label>
+            <input type="date" class="form-control" />
+          </div>
+
+          <div class="col-md-4">
+            <label><b>&nbsp;</b></label>
+            <button class="btn btn-primary btn-block">
+              Calculate Interval
+            </button>
+          </div>
+        </div>
+
+        <div class="result-box">
+          <h3>Result:</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
