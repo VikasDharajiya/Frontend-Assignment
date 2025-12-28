@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirLines International</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand lh-1" href="#">
+          <span class="d-block fs-2 fw-bold">
+            <span class="text-primary">Air</span>Lines
+          </span>
+          <small class="text-secondary">International Travel</small>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aircraft.html">Our Aircraft</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="safety.html">Safety</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="charters.html">Charters</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO / SLIDER ================= -->
+    <section class="hero-section">
+      <div
+        id="airlineCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators">
+          <button
+            data-bs-target="#airlineCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            data-bs-target="#airlineCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            data-bs-target="#airlineCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img
+              src="img/bg-plane.avif"
+              class="d-block w-100 hero-img"
+              alt="Flight"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <h1 class="display-4 fw-bold">
+                      COMFORT<br /><em>Guaranteed</em>
+                    </h1>
+                    <p class="lead mt-3">
+                      Premium air travel with world-class safety and service.
+                    </p>
+                    <button class="btn btn-dark mt-3">
+                      ORDER THE TICKETS ONLINE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img
+              src="img/bg-2.avif"
+              class="d-block w-100 hero-img"
+              alt="Aircraft"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <h1 class="display-4 fw-bold">
+                      GLOBAL<br /><em>Connectivity</em>
+                    </h1>
+                    <p class="lead mt-3">
+                      Connecting major destinations worldwide.
+                    </p>
+                    <button class="btn btn-dark mt-3">
+                      ORDER THE TICKETS ONLINE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img
+              src="img/bg-3.avif"
+              class="d-block w-100 hero-img"
+              alt="Booking"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <h1 class="display-4 fw-bold">
+                      SAFE &<br /><em>Reliable</em>
+                    </h1>
+                    <p class="lead mt-3">
+                      Trusted by thousands of passengers every year.
+                    </p>
+                    <button class="btn btn-dark mt-3">
+                      ORDER THE TICKETS ONLINE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#airlineCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#airlineCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Sidebar -->
+          <aside class="col-lg-3">
+            <div class="sidebar-box">
+              <h6>Your Flight Planner</h6>
+              <div class="trip-options mb-3">
+                <label
+                  ><input type="radio" name="trip" checked /> Round Trip</label
+                >
+                <label><input type="radio" name="trip" /> One Way</label>
+              </div>
+              <input class="form-control mb-2" placeholder="Departure City" />
+              <input class="form-control mb-2" placeholder="Destination City" />
+              <input type="date" class="form-control mb-2" />
+              <button class="btn btn-primary w-100">SEARCH FLIGHTS</button>
+            </div>
+
+            <div class="sidebar-box mt-4">
+              <h6>Latest News</h6>
+              <div class="news-item">
+                <a href="#">New aircraft added to fleet</a>
+                <span>February 28, 2024</span>
+              </div>
+              <div class="news-item">
+                <a href="#">Awarded best regional airline</a>
+                <span>January 15, 2024</span>
+              </div>
+              <div class="news-item">
+                <a href="#">AirLines expands international routes</a>
+                <span>March 12, 2024</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Content -->
+          <div class="col-lg-9">
+            <h4 class="fw-bold">Welcome to AirLines International</h4>
+
+            <p class="text-primary small">
+              AirLines International is a trusted provider of premium air travel
+              solutions, delivering safe, reliable, and comfortable journeys
+              across the globe.
+            </p>
+
+            <p class="text-primary small">
+              With decades of aviation experience, modern aircraft, and a highly
+              trained crew, we maintain the highest standards of safety and
+              customer satisfaction.
+            </p>
+
+            <h6 class="fw-bold mt-4">Aircraft</h6>
+            <p class="text-muted small">
+              Our fleet features modern aircraft equipped with advanced avionics
+              and spacious cabins.
+            </p>
+
+            <ul class="aircraft-list">
+              <li>✔ Latest generation jets</li>
+              <li>✔ Premium seating comfort</li>
+              <li>✔ Strict maintenance programs</li>
+              <li>✔ Fuel-efficient operations</li>
+            </ul>
+
+            <button class="btn btn-outline-dark btn-sm mb-4">READ MORE</button>
+
+            <h6 class="fw-bold mt-4">Charters</h6>
+            <p class="text-muted small">
+              Flexible charter solutions for corporate and private travel.
+            </p>
+
+            <ul class="charter-list">
+              <li>✔ Executive charters</li>
+              <li>✔ Luxury private flights</li>
+              <li>✔ Custom routes</li>
+              <li>✔ 24/7 support</li>
+            </ul>
+
+            <div class="d-flex gap-2 mb-4">
+              <button class="btn btn-primary btn-sm">FLEET</button>
+              <button class="btn btn-outline-dark btn-sm">RESERVATION</button>
+            </div>
+
+            <!-- Clients Section -->
+            <h5 class="fw-bold">Our Clients</h5>
+            <div class="row align-items-center mt-3">
+              <div class="col-md-7">
+                <p class="text-muted small">
+                  Corporations, government agencies, and private travelers trust
+                  AirLines International for dependable air services.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <div class="client-box">
+                  <p class="small mb-1">
+                    “Exceptional service and smooth flight operations.”
+                  </p>
+                  <small>— Michael Anderson</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row align-items-center mt-3">
+              <div class="col-md-7">
+                <p class="text-muted small">
+                  Our reputation is built on safety, punctuality, and premium
+                  service.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <div class="client-box">
+                  <p class="small mb-1">
+                    “Our first choice for executive travel.”
+                  </p>
+                  <small>— Sophia Williams</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 small">© 2010–2025 AirLines International</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0 small">Professional airline services</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
